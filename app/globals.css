@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.preview-canvas {
+  background-color: #f7fafc;
+}
+
+.preview-container {
+  border: 1px solid #e2e8f0;
+}
+
+.preview-container :first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .preview-container {
+    max-width: 640px;
+    max-height: 926px;
+    min-height: 600px;
+    min-width: 375px;
+    resize: both;
+  }
+}
